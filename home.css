@@ -117,7 +117,7 @@ body{
 	font-size: 16px;
 }
 .studentsProjects .col-lg-4 i{
-	color: #393A35;
+	color: #ededed;
 	font-size: 21px;
 	transition: 0.2s;
 }
@@ -126,33 +126,35 @@ body{
 	transition: 0.2s;
 }
 
+.title-h1{
+	padding-top: 10vh;
+	background-color: #FCD232;
+}
 /*ALL PROJECTS*/
 .allProjects{
 	background-color: #FCD232;
 	padding-top: 40px;
 	padding-bottom: 60px;
 }
-.allProjects h1{
-	margin-bottom: 20px;
-}
 .allProjects .card{
 	padding: 10px 25px;
 	transition: 0.5s;
 }
+
 .allProjects .card:hover {
   transform: scale(1.06);
   transition: 0.5s;
   cursor: pointer;
 }
-.allProjects .card-img{
-	background-image: url(images/main-img.jpg);
-	height: 150px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+
+.allProjects .card-img div{
+	padding: 0px;
+}
+
+.allProjects .card-img div img{
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
+
 }
 .card-content{
 	background-color: #ededed;
@@ -160,13 +162,16 @@ body{
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
+
 .allProjects .button-academy{
 	background-color: #FCD232;
 	margin: 15px 0px 5px 0px;
 }
+
 .allProjects .card h4{
 	font-weight: bold;
 }
+
 .allProjects .card p{
 	font-size: 13px;
 }
@@ -193,4 +198,8 @@ body{
 .footer i{
 	font-size: 28px;
 	color: #e00f07;
+}
+
+.active-category{
+	background-color: #ab150f;
 }
