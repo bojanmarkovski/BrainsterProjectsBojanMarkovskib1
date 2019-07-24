@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+      <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+      <title>Brainster</title>
+      <link rel="shortcut icon" href="images/logo.png">
+      <link rel="stylesheet" type="text/css" href="hire.css">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/4bd925a6b0.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+      <div class="loader">
+            <div class="lds-dual-ring"></div>
+      </div>
+
+	<div class="nav header" id="home">
+	    <div class="container-fluid">
+	        <div class="row">
+	           <div class="col-lg-12">
+	              <button class="navbar-toggle pull-left" id="nav-icon3" data-toggle="collapse" data-target="#mynavbar">
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+	              </button>
+	              <div class="navbar-brand logo">
+	                 <a href="index.html">
+	                 <img src="images/logo.png" class="img-responsive"></a>
+	              </div>
+	              <div class="collapse navbar-collapse" id="mynavbar">
+	                 <ul class="nav navbar-nav navbar-right">
+	                    <li>
+	                       <a href="https://www.brainster.io/marketpreneurs" target="_blank">Академија за маркетинг</a>
+	                    </li>
+	                    <li>
+	                       <a href="https://www.brainster.io/marketpreneurs" target="_blank">Академија за програмриање</a>
+	                    </li>
+	                    <li>
+	                       <a href="https://www.brainster.io/marketpreneurs" target="_blank">Академија за data science</a>
+	                    </li>
+	                    <li>
+	                       <a href="https://www.brainster.io/design" target="_blank">Академија за дизајн</a>
+	                    </li>
+	                    <li class="hire">
+	                       <a href="hire.html" target="_blank">Вработи наши студенти</a>
+	                    </li>
+	                 </ul>
+	              </div>
+	           </div>
+	        </div>
+	    </div>
+	</div>
+
+  	<div class="container-fluid">
+
+            <div class="row form">
+                  <div class="col-lg-12 col-md-12">
+                        <h1 class="text-center">Вработи студенти</h1>
+                        <form action="hire.php" class="form-group-lg">
+                        	<!-- LEFT SIDE FORM -->
+	                        <div class="col-lg-3 col-lg-offset-3 col-md-5 col-md-offset-1">
+	                        	<label for="">Име и презиме</label>
+	                        	<i><input type="text" class="form-control" placeholder="Вашето име и презиме"></i>
+	                        	<label for="">Електронска пошта</label>
+	                        	<i><input type="text" class="form-control" placeholder="Контакт електронска пошта на Вашата компанија"></i>
+	                        	<label for="">Тип на студент</label><br>
+	                        	<select name="" class="form-control">
+	                        		<option value="">Студенти од Програмирање</option>
+	                        		<option value="">Студенти од Маркетинг</option>
+	                        		<option value="">Студенти од Data science</option>
+	                        		<option value="">Студенти од Дизајн</option>
+	                        	</select>
+	                        </div>
+                        	<!-- RIGHT SIDE FORM -->
+	                        <div class="col-lg-3 col-md-5">
+	                        	<label for="">Име на компанија</label>
+	                        	<i><input type="text" class="form-control form-group-lg" placeholder="Име на Вашата компанија"></i>
+	                        	<label for="">Контакт Телефон</label>
+	                        	<i><input type="text" class="form-control" placeholder="Контакт телефон на Вашата компанија"></i>
+	                        	<label for="" class="text-transparent"> .</label> <br>
+	                        	<button type="button" class="btn form-control">ИСПРАТИ</button>
+	                        </div>
+	                    </form>
+                  </div>
+            </div>
+      	
+            <!-- FOOTER -->
+            <div class="row text-center footer">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p>Изработено со <i class="fas fa-heartbeat"></i> од студентите на Brainster</p>
+                  </div>
+            </div>
+  	</div>
+      <script>
+            window.addEventListener("load", function() {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden";
+            });
+            $( document ).ready()
+            
+      </script>
+</body>
+</html>

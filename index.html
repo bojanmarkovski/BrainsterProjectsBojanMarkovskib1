@@ -10,8 +10,13 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/4bd925a6b0.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
+      <div class="loader">
+            <div class="lds-dual-ring"></div>
+      </div>
+
 	<div class="nav header" id="home">
 	    <div class="container-fluid">
 	        <div class="row">
@@ -30,19 +35,19 @@
 	              <div class="collapse navbar-collapse" id="mynavbar">
 	                 <ul class="nav navbar-nav navbar-right">
 	                    <li>
-	                       <a href="https://www.brainster.io/marketpreneurs">Академија за маркетинг</a>
+	                       <a href="https://www.brainster.io/marketpreneurs" target="_blank">Академија за маркетинг</a>
 	                    </li>
 	                    <li>
-	                       <a href="https://www.brainster.io/marketpreneurs">Академија за програмриање</a>
+	                       <a href="https://www.brainster.io/marketpreneurs" target="_blank">Академија за програмриање</a>
 	                    </li>
 	                    <li>
-	                       <a href="https://www.brainster.io/marketpreneurs">Академија за data science</a>
+	                       <a href="https://www.brainster.io/marketpreneurs" target="_blank">Академија за data science</a>
 	                    </li>
 	                    <li>
-	                       <a href="https://www.brainster.io/design">Академија за дизајн</a>
+	                       <a href="https://www.brainster.io/design" target="_blank">Академија за дизајн</a>
 	                    </li>
-	                    <li class="employee">
-	                       <a href="employee.html">Вработи наши студенти</a>
+	                    <li class="hire">
+	                       <a href="hire.html" target="_blank">Вработи наши студенти</a>
 	                    </li>
 	                 </ul>
 	              </div>
@@ -55,9 +60,10 @@
 
       	<div class="row main-img">
       		<div class="overlay"></div>
+                  <h1>Brainster Labs</h1>
       	</div>
 
-      	<!-- ROW studentsProjects -->
+      	<!-- Students Projects -->
       	<div class="row studentsProjects">
 
       		<div class="col-lg-4 col-md-4">
@@ -95,17 +101,121 @@
 
       	</div>
 
-
+      	<!-- ALL PROJECTS -->
       	<div class="row allProjects">
       		<h1 class="text-center">Проекти</h1>
-      		<div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-1">
-      			<div class="col-lg-4 col-md-4">
-      				<img src="" alt="">
-      				
+                  <!-- FIRST ROW -->
+      		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      			<div class="col-lg-4 col-md-4 card">
+      				<div class="row card-img">
+                                    <div class="col-lg-12 col-md-12"></div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-lg-12 col-md-12 card-content">
+                                          <button type="button" class="btn button-academy">Академија за Маркетинг</button>
+                                          <h4>Име на проектот стои овде во две линии</h4>
+                                          <p>Краток опис во кој студентите можат да опишат што се работи во проектот</p>
+                                          <small>Април - Септември 2019</small>
+                                          <button type="button" class="btn pull-right button-read-more">Дознај повеќе</button>
+                                    </div>
+                              </div>
       			</div>
-      		</div>
-      	</div>
 
+                        <div class="col-lg-4 col-md-4 card">
+                              <div class="row card-img">
+                                    <div class="col-lg-12 col-md-12"></div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-lg-12 col-md-12 card-content">
+                                          <button type="button" class="btn button-academy">Академија за Маркетинг</button>
+                                          <h4>Име на проектот стои овде во две линии</h4>
+                                          <p>Краток опис во кој студентите можат да опишат што се работи во проектот</p>
+                                          <small>Април - Септември 2019</small>
+                                          <button type="button" class="btn pull-right button-read-more">Дознај повеќе</button>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 card">
+                              <div class="row card-img">
+                                    <div class="col-lg-12 col-md-12"></div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-lg-12 col-md-12 card-content">
+                                          <button type="button" class="btn button-academy">Академија за Маркетинг</button>
+                                          <h4>Име на проектот стои овде во две линии</h4>
+                                          <p>Краток опис во кој студентите можат да опишат што се работи во проектот</p>
+                                          <small>Април - Септември 2019</small>
+                                          <button type="button" class="btn pull-right button-read-more">Дознај повеќе</button>
+                                    </div>
+                              </div>
+                        </div>
+      		</div>
+
+                  <!-- SECOND ROW -->
+                  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="col-lg-4 col-md-4 card">
+                              <div class="row card-img">
+                                    <div class="col-lg-12 col-md-12"></div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-lg-12 col-md-12 card-content">
+                                          <button type="button" class="btn button-academy">Академија за Маркетинг</button>
+                                          <h4>Име на проектот стои овде во две линии</h4>
+                                          <p>Краток опис во кој студентите можат да опишат што се работи во проектот</p>
+                                          <small>Април - Септември 2019</small>
+                                          <button type="button" class="btn pull-right button-read-more">Дознај повеќе</button>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 card">
+                              <div class="row card-img">
+                                    <div class="col-lg-12 col-md-12"></div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-lg-12 col-md-12 card-content">
+                                          <button type="button" class="btn button-academy">Академија за Маркетинг</button>
+                                          <h4>Име на проектот стои овде во две линии</h4>
+                                          <p>Краток опис во кој студентите можат да опишат што се работи во проектот</p>
+                                          <small>Април - Септември 2019</small>
+                                          <button type="button" class="btn pull-right button-read-more">Дознај повеќе</button>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 card">
+                              <div class="row card-img">
+                                    <div class="col-lg-12 col-md-12"></div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-lg-12 col-md-12 card-content">
+                                          <button type="button" class="btn button-academy">Академија за Маркетинг</button>
+                                          <h4>Име на проектот стои овде во две линии</h4>
+                                          <p>Краток опис во кој студентите можат да опишат што се работи во проектот</p>
+                                          <small>Април - Септември 2019</small>
+                                          <button type="button" class="btn pull-right button-read-more">Дознај повеќе</button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+      	</div>
+            <!-- END ALL PROJECTS -->
+
+            <!-- FOOTER -->
+            <div class="row text-center footer">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p>Изработено со <i class="fas fa-heartbeat"></i> од студентите на Brainster</p>
+                  </div>
+            </div>
   	</div>
+      <script>
+            window.addEventListener("load", function() {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden";
+            });
+            $( document ).ready()
+            
+      </script>
 </body>
 </html>

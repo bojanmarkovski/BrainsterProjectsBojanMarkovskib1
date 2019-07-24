@@ -1,3 +1,42 @@
+/* LOADER */
+.loader {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lds-dual-ring {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+}
+.lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 46px;
+	height: 46px;
+	margin: 1px;
+	border-radius: 50%;
+	border: 5px solid #393A35;
+	border-color: #393A35 transparent #393A35 transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* LOADER END */
+
 body{
 	font-family: "Ubuntu", sans-serif;
 }
@@ -17,19 +56,22 @@ body{
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
 }
+.header ul li a:focus{
+	background-color: transparent;
+}
 .header .nav>li>a:hover{
 	background-color: transparent;
 	color: #585956;
 	transition: 0.3s;
 }
-.header.nav .employee{
+.header.nav .hire{
 	background-color: #e00f07;
 	border-radius: 5px;
 }
-.header.nav .employee a{
-	color: white;
+.header.nav .hire a{
+	color: #ededed;
 }
-.header.nav .employee a:hover{
+.header.nav .hire a:hover{
 	color: #e0e08d;
 }
 .main-img{
@@ -40,6 +82,14 @@ body{
 	background-size: cover;
 	position: relative;
 }
+.main-img h1{
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	color: #ededed;
+	font-size: 65px;
+}
 .overlay{
 	position: absolute;
 	width: 100%;
@@ -48,7 +98,7 @@ body{
 }
 .studentsProjects{
 	background-color: #393A35;
-	color: white;
+	color: #ededed;
 }
 .studentsProjects .col-lg-4{
 	padding: 30px 40px;
@@ -58,21 +108,89 @@ body{
 }
 .studentsProjects .col-lg-4:hover{
 	background-color: #ab150f;
-	color: #393A35;
+	color: #e0e08d;
 	transition: 0.2s;
 	cursor: pointer;
 }
 .studentsProjects .col-lg-4 p {
 	margin-bottom: 0;
-	font-size: 15px;
+	font-size: 16px;
 }
 .studentsProjects .col-lg-4 i{
 	color: #393A35;
-	font-size: 19px;
+	font-size: 21px;
+	transition: 0.2s;
+}
+.studentsProjects .col-lg-4:hover i{
+	color: #e0e08d;
+	transition: 0.2s;
 }
 
 /*ALL PROJECTS*/
 .allProjects{
 	background-color: #FCD232;
-	padding-top: 30px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+.allProjects h1{
+	margin-bottom: 20px;
+}
+.allProjects .card{
+	padding: 10px 25px;
+	transition: 0.5s;
+}
+.allProjects .card:hover {
+  transform: scale(1.06);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.allProjects .card-img{
+	background-image: url(images/main-img.jpg);
+	height: 150px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.card-content{
+	background-color: #ededed;
+	padding-bottom: 15px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.allProjects .button-academy{
+	background-color: #FCD232;
+	margin: 15px 0px 5px 0px;
+}
+.allProjects .card h4{
+	font-weight: bold;
+}
+.allProjects .card p{
+	font-size: 13px;
+}
+
+.allProjects .card .button-read-more{
+	background-color: #e00f07;
+	color: #ededed;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.allProjects .card .button-read-more:hover{
+	color: #e0e08d;
+}
+
+.footer{
+	background-color: #393A35;
+	color: #ededed;
+}
+.footer p{
+	margin: 30px 0px;
+	font-size: 16px;
+}
+.footer i{
+	font-size: 28px;
+	color: #e00f07;
 }
